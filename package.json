@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node --max-old-space-size=8192 build-dict.js",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
+    "xz": "xz -dk ./xz/*.xz",
+    "euc": "find ./xz -name '*.csv' -exec nkf -e --overwrite {} \\;",
+    "tar": "find ./xz -name '*.csv' -exec sh -c 'tar -Jcvf ./dict/neologd/$(basename '{}').tar.xz {}' \\;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -30,6 +33,7 @@
     "decompress-tarxz": "^2.1.1",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
+    "iconv-lite": "^0.4.19",
     "kuromoji": "^0.1.2",
     "rimraf": "^2.6.2",
     "rxjs": "^5.5.8",
