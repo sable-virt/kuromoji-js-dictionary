@@ -1,2 +1,2 @@
-dict/mecab-ipadic-2.7.0-20070801.tar.xz filter=lfs diff=lfs merge=lfs -text
-dict/neologd/*.tar.xz filter=lfs diff=lfs merge=lfs -text
+dict/mecab-ipadic-2.7.0-20070801.tar.gz filter=lfs diff=lfs merge=lfs -text
+dict/neologd/*.tar.gz filter=lfs diff=lfs merge=lfs -text

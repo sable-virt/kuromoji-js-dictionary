@@ -20,7 +20,7 @@ const argv = yargs.usage(`Usage: dict <command> [options]`)
       baseDictPath: {
         alias: 'b',
         describe: 'mecab-ipadic tar.xz file path',
-        default: path.join(__dirname, 'dict/mecab-ipadic-2.7.0-20070801.tar.xz'),
+        default: path.join(__dirname, 'dict/mecab-ipadic-2.7.0-20070801.tar.gz'),
         type: 'string'
       },
       useNeologd: {
