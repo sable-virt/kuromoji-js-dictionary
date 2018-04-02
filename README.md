@@ -1,4 +1,4 @@
-# kuromoji-js-dictionary
+# [WIP]kuromoji-js-dictionary
 
 kuromoji.js用の辞書ファイルを生成するスクリプト
 mecab-ipadic-neologdの汎用辞書のみプリセットで含んでます。
