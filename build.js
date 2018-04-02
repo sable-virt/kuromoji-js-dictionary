@@ -23,10 +23,10 @@ const argv = yargs.usage(`Usage: dict <command> [options]`)
         default: path.join(__dirname, 'dict/mecab-ipadic-2.7.0-20070801.tar.gz'),
         type: 'string'
       },
-      useNeologd: {
+      notIncludeNeologd: {
         alias: 'n',
-        describe: 'use mecab-ipadic-NEologd dictionary',
-        default: true,
+        describe: 'unuse mecab-ipadic-NEologd dictionary',
+        default: false,
         type: 'boolean'
       },
       customDictPath: {
