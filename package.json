@@ -8,7 +8,6 @@
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
     "convert": "npm run xz && npm run euc && npm run tar",
     "xz": "xz -dk ./neologd-seed/*.xz",
-    "euc": "find ./neologd-seed -name '*.csv' -exec sh -c 'nkf -e --overwrite {}' \\;",
     "tar": "find ./neologd-seed -name '*.csv' -exec sh -c 'tar -cvzf ./dict/neologd/$(basename '{}').tar.gz {}' \\;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,6 +33,7 @@
     "glob": "^7.1.2",
     "iconv-lite": "^0.4.19",
     "kuromoji": "^0.1.2",
+    "linebyline": "^1.3.0",
     "rimraf": "^2.6.2",
     "rxjs": "^5.5.8",
     "tar": "^4.4.1",

@@ -22,7 +22,6 @@ GitLFS/xz/nkfのインストール
 
 ```
 brew install git-lfs
-brew install nkf
 brew install xz
 ```
 
@@ -49,7 +48,7 @@ node index.js
 
 ## カスタム辞書の追加
 
-1. 任意のフォルダに評価済みの辞書データをtar.gzで設置（この時内部のcsvは `EUC-JP` にしてください）
+1. 任意のフォルダに評価済みの辞書データをtar.gzで設置
 2. `node index.js -c=/path/to/dict` のようにCオプションにオリジナルの辞書データのあるディレクトリを引き渡します
 
 ## mecab-ipadic-neologdを使用しない場合
