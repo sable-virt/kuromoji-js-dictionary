@@ -28,13 +28,7 @@ brew install xz
 ### 辞書作成
 
 ```
-npm start
-```
-
-または
-
-```
-node index.js
+./bin/run [options]
 ```
 
 ※ 同梱辞書セットはdictディレクトリに格納済みなので上記コマンドで辞書が生成されます。
@@ -53,4 +47,4 @@ node index.js
 
 ## mecab-ipadic-neologdを使用しない場合
 
-`node index.js -n`
+`./bin/run -n`
