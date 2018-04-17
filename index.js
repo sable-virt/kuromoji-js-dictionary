@@ -12,7 +12,7 @@ class DictCommand extends Command {
   async run() {
     const {flags} = this.parse(DictCommand);
     reader(flags).switchMap((dict) => {
-      return exporter(dict, argv);
+      return exporter(dict, flags);
     }).subscribe(() => {
       console.log(`All done!!`);
     });
@@ -24,7 +24,7 @@ DictCommand.description = `
 DictCommand.flags = {
   version: flags.version({char: 'v'}),
   help: flags.help({char: 'h'}),
-  output: flags.string({
+  outPath: flags.string({
     char: 'o',
     description: 'dist file directory',
     default: 'dist',
