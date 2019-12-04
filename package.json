@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./index.js --verbose",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
-    "convert": "npm run xz && npm run euc && npm run tar",
+    "convert": "npm run xz && npm run tar",
     "xz": "xz -dk ./neologd-seed/*.xz",
     "tar": "find ./neologd-seed -name '*.csv' -exec sh -c 'tar -cvzf ./dict/neologd/$(basename '{}').tar.gz {}' \\;",
     "test": "echo \"Error: no test specified\" && exit 1"
